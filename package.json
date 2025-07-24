@@ -1,6 +1,6 @@
 {
   "name": "@mercuryml/mcp-mixpanel",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\" && mkdir -p dist && cp build/index.js dist/index.js"
@@ -19,7 +19,8 @@
   },
   "type": "module",
   "bin": {
-    "mcp-mixpanel": "build/index.js"
+    "mcp-mixpanel": "build/index.js",
+    "@mercuryml/mcp-mixpanel": "build/index.js"
   },
   "files": [
     "build"
