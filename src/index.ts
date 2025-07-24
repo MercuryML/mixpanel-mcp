@@ -11,7 +11,7 @@ const server = new McpServer({
 
 const args = process.argv.slice(2);
 
-if (args.length === 0) {
+if (args.length === 0 && (!process.env.SERVICE_ACCOUNT_USER_NAME || !process.env.SERVICE_ACCOUNT_PASSWORD || !process.env.DEFAULT_PROJECT_ID)) {
   console.error("Please provide a Mixpanel service account username and password and a project ID");
   process.exit(1);
 }
